@@ -1,0 +1,244 @@
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("../textStyles/SourceSansPro-Regular.ttf"); }
+@keyframes animatedBackground {
+  from {
+    background-position-y: 40%;
+    background-position-x: 10%; }
+  to {
+    background-position-y: 10%;
+    background-position-x: 50%; } }
+html {
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  animation: animatedBackground 3s ease-in-out alternate-reverse infinite; }
+
+#inactive {
+  background-color: #0f1a30;
+  opacity: 0.95;
+  margin-right: 18%;
+  margin-top: 23vh;
+  margin-left: 18%;
+  width: available;
+  display: flex;
+  height: 500px; }
+  #inactive .sub {
+    flex-direction: row;
+    flex: 1;
+    margin-right: 5%;
+    height: available;
+    position: relative; }
+    #inactive .sub .line {
+      width: 50px;
+      height: 1px;
+      border-bottom: 2px solid #49abfe;
+      margin-left: 10%;
+      position: absolute;
+      top: 22%; }
+    #inactive .sub .heading {
+      font-family: 'Source Sans Pro', serif;
+      font-weight: 100;
+      font-size: 28px;
+      color: white;
+      position: absolute;
+      top: 10%;
+      margin-bottom: 15%;
+      margin-left: 10%; }
+    #inactive .sub p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: lighter;
+      color: white;
+      position: absolute;
+      top: 25%;
+      margin-bottom: 15%;
+      margin-left: 10%;
+      text-align-all: justify; }
+    #inactive .sub .sliderBtn {
+      background-color: #0f1a30;
+      border: #49abfe 2px solid;
+      color: white;
+      padding: 15px 32px;
+      font-family: 'Source Sans Pro', serif;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      letter-spacing: 2px;
+      width: 140px;
+      height: 50px;
+      outline: none;
+      border-radius: 25px;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 15%;
+      margin-left: 10%;
+      transition: color 0.3s;
+    }
+      #inactive .sub .sliderBtn:active {
+        background-color: #0f1a30;
+        border: #49abfe 2px solid;
+        color: white;
+        padding: 15px 32px;
+        font-family: 'Source Sans Pro', serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 2px;
+        width: 140px;
+        height: 50px;
+        outline: none;
+        border-radius: 25px; }
+      #inactive .sub .sliderBtn:hover {
+        background-color: #49abfe;
+        border: #49abfe 2px solid;
+        color: white;
+        padding: 15px 32px;
+        font-family: 'Source Sans Pro', serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 2px;
+        width: 140px;
+        height: 50px;
+        outline: none;
+        border-radius: 25px; }
+
+#shadow {
+  border-top: 19px solid transparent;
+  border-bottom: 19px solid transparent;
+  border-right: 15px solid #81d1f1;
+  top: 0;
+  left: 49.2%;
+  z-index: -10;
+  margin-top: 21.4vh;
+  height: 489px;
+  position: absolute; }
+
+#slider {
+  top: 0;
+  left: 32%;
+  margin-right: 18%;
+  margin-top: 21.5vh;
+  margin-left: 18%;
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  height: 525px; }
+  #slider .formContainer {
+    display: none;
+    opacity: 0;
+    width: available;
+    height: 100%;
+    background-color: #fff;
+    transition: all 1s ease;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 10%;
+    margin-right: 10%; }
+    #slider .formContainer .form {
+      width: available;
+      position: relative; }
+      #slider .formContainer .form .formHeading {
+        font-family: 'Source Sans Pro', serif;
+        font-weight: 100;
+        font-size: 28px;
+        color: #3e495e; }
+      #slider .formContainer .form .line {
+        width: 50px;
+        height: 1px;
+        border-bottom: 2px solid #49abfe;
+        margin-bottom: 5%;
+        margin-top: 15%; }
+      #slider .formContainer .form #logo {
+        float: right;
+        top: 0; }
+    #slider .formContainer * {
+      transition: opacity 1s ease; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/*__________________________________________________________________________________________________________________________________________________*/
+
+.formHeading{
+  display: inline-block;
+}
+.logo{
+  display: inline-block;
+  float: right;
+}
+#logLabMail, #logLabPass, #labMail, #labPass, #labName{
+    font-family: 'Source Sans Pro';
+    color: #ddd;
+}
+#logIcMail, #icMail, #logIcPass, #icPass, #logForg, #icName{
+  float: right;
+}
+#logForg{
+  text-decoration: none;
+  color: #ddd;
+}
+#slider label::after{
+  content: '*';
+  color: red;
+}
+
+.actBtn{
+    background-color:#f89a35;
+    font-family: 'Source Sans Pro';
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    outline:none;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.actBtn:hover{
+  background-color:#f8bf35;
+  font-family: 'Source Sans Pro';
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline:none;
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #333;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+input:focus{
+  outline: none;
+}

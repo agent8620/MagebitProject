@@ -1,0 +1,66 @@
+<?php require 'app/view/header.phtml' ?>
+<div id="inactive">
+    <div class="sub">
+        <h1 class="heading">
+            Don't have an account?
+        </h1>
+        <div class="line"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ea earum illum in laborum omnis sit veniam
+            voluptatibus. Ab autem debitis fuga inventore natus, odit optio ratione reiciendis similique sint?
+        </p>
+        <button class="sliderBtn" id="signup">SIGN UP</button>
+    </div>
+    <div class="sub">
+        <h1 class="heading">
+            Have an account?
+        </h1>
+        <div class="line"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor error, excepturi explicabo
+            facere harum impedit, ipsam laboriosam maxime nisi perferendis provident quidem quod rerum sapiente tempore
+            ut
+            voluptates voluptatibus!
+        </p>
+        <button class="sliderBtn" id="login">LOGIN</button>
+    </div>
+</div>
+<div id="shadow"></div>
+<div id="slider">
+    <div class="formContainer" id="loginWrapper">
+        <form action="login" class="form" id="loginForm" method="POST">
+            <h1 class="formHeading">Login</h1>
+            <img src="public/images/logo.jpg" class="logo">
+            <div class="line"></div>
+            <label class="reg" id='labMail'>Email</label>
+            <span class="error" id="mailError"></span>
+            <img src="public/images/ic_mail_def.png" id="icMail">
+            <input type="email" name="email" id="mail" oninput="inputEmail()"   title="email"/>
+            <label class="reg" for="pass" id='labPass'>Password</label>
+            <span class="error" id="passError"></span>
+            <img src="public/images/ic_lock_def.png" id="icPass">
+            <input type="password" name="password" id="pass" oninput="inputPass()"/>
+            <button class="actBtn" type="submit">LOG IN</button>
+            <a href="forgot" id="logForg">Forgot?</a>
+        </form>
+    </div>
+
+    <div class="formContainer" id="signupWrapper">
+            <form action="signup" class="form" id="signupForm" method="POST">
+                <h1 class="formHeading">Sign Up</h1>
+                <img src="public/images/logo.jpg" class="logo">
+
+                <div class="line"></div>
+                <label class="reg" id='labMail'>Email</label>
+                <span class="error" id="mailError"></span>
+                <img src="public/images/ic_mail_def.png" id="icMail">
+                <input type="email" name="email" id="mail" oninput="inputEmail()"   title="email"/>
+                <label class="reg" for="pass" id='labPass'>Password</label>
+                <span class="error" id="passError"></span>
+                <img src="public/images/ic_lock_def.png" id="icPass">
+                <input type="password" name="password" id="pass" oninput="inputPass()"/>
+                <button class="actBtn" type="submit">SIGN UP</button>
+            </form>
+    </div>
+</div>
+<?php require 'app/view/footer.phtml' ?>
